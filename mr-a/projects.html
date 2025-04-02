@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Torres | Projects</title>
+    <link rel="stylesheet" href="/mr-a/styles/index.css">
+    <!-- Google Fonts for Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="main-nav">
+            <a href="/mr-a/index.html" id="site-title">Carlos Torres</a>
+            <!-- Navigation links -->
+            <ul>
+                <li><a href="/mr-a/index.html">Home</a></li>
+                <li><a href="/mr-a/about.html">About</a></li>
+                <li><a href="/mr-a/contact.html">Contact</a></li>
+                <li><a href="/mr-a/projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="welcome-header">Projects</h1>
+    <p id="center-align">Here are some of the projects I have worked on or am currently working on:
+    <ul>
+        <li>LeAssisstant - an ai client that helps</li>
+        <li>This website</li>
+        <li>and much, much, much, much more.</li>
+    </ul>
+    </p>
+    <h2 id="center-align">PowerShell Script</h2>
+    <p id="center-align">I'd figured I would throw in my PowerShell script here that auto installs
+        <ul>
+            <li>Visual Studio Code</li>
+            <li>Obsidian.md</li>
+            <li>Github Desktop</li>
+            <li>YT-DLP (youtube downloader)</li>
+            <li>other stuff soon™️</li>
+        </ul>
+    </p>
+    <p id="center-align">To use this script, you can run the following command in PowerShell:</p>
+
+    <div class="code-snippet-container">
+        <pre id="powershell-snippet">
+Set-ExecutionPolicy Bypass -Scope CurrentUser; Invoke-WebRequest -Uri "https://github.com/pyhuee/glowing-software/raw/main/GetSoftware.ps1" -OutFile "GetSoftware.ps1"; ./GetSoftware.ps1
+        </pre>
+        <button class="copy-button" onclick="copySnippet()"></button>
+    </div>
+
+    <script>
+    function copySnippet() {
+        const snippet = document.getElementById("powershell-snippet").innerText;
+        navigator.clipboard.writeText(snippet)
+            .then(() => alert("Copied!"))
+            .catch(() => alert("Error copying"));
+    }
+    </script>
+</body>
+</html>

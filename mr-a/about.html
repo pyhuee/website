@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Torres | About</title>
+    <link rel="stylesheet" href="/mr-a/styles/index.css">
+    <!-- Google Fonts for Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav id="main-nav">
+            <a href="/mr-a/index.html" id="site-title">Carlos Torres</a>
+            <!-- Navigation links -->
+            <ul>
+                <li><a href="/mr-a/index.html">Home</a></li>
+                <li><a href="/mr-a/about.html">About</a></li>
+                <li><a href="/mr-a/contact.html">Contact</a></li>
+                <li><a href="/mr-a/projects.html">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1 id="welcome-header">About Me</h1>
+    <p id="center-align">Hola, bienvinedo; Hello and welcome. <br><br> So, about me. I like to create programs that fit my needs. Sometimes they help others, and I am okay with that! There is so much software that is avaliable on Github that I have used that has made life so much easier for me! This very editor that I am using is <a href="https://github.com/microsoft/vscode">open source.</a> This is why when I build something, I like it to be open. That way anyone else could tag in and help, or use it. <br> I also think very highly of right to repair, so keep that in mind about me.</p>
+    <p id="center-align"> <button id="resume-button" onclick="promptForPassword()">Get Resume</button></p>
+    <script>
+    function promptForPassword() {
+      const password = prompt("Enter password psst. you gotta be on your Grandview ISD Google Account:");
+      if (password === "GrandviewRocks!") {
+        window.location.href = "https://docs.google.com/document/d/10jBtEPRPlxEB1NiP2WDCieE8kHLpvmQL5qCZn7ftvLA/edit?usp=sharing";
+      } else {
+        alert("Incorrect password!");
+      }
+    }
+    </script>
+</body>
+</html>

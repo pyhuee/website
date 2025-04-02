@@ -1,0 +1,143 @@
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1000;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#main-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#site-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+#main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+#main-nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+#main-nav ul li a:hover {
+    color: gray;
+}
+
+#welcome-header {
+    font-size: 10rem; /* Larger font size for the welcome header */
+    font-weight: bold;
+    margin: 40px auto; /* Center the header */
+    color: #333; /* Darker color for better visibility */
+    text-align: center; /* Center align text */
+}
+
+#steve-jobs-quote {
+    font-style: italic;
+    color: #555;
+    margin: 20px auto;
+    padding: 10px;
+    border-left: 4px solid #ccc; /* Decorative line */
+    max-width: 600px; /* Limit width for better readability */
+    text-align: center;
+}
+
+#center-align {
+    text-align: center; /* Center align text */
+    margin: 20px auto; /* Center the element */
+    padding: 10px; /* Add some padding for better spacing */
+}
+
+body {
+    background-color: #d4d2d2; /* Light grey color */
+  }
+
+p {
+    font-family: Playfair Display, serif; /* Ensure paragraphs use the same font */
+    font-size: 1.3rem; /* Consistent font size for paragraphs */
+    line-height: 1.6; /* Improved readability */
+    color: #333; /* Darker text color for better contrast */
+}
+  
+a {
+    text-decoration: underline;
+    color: inherit; /* Inherit color from surrounding text */
+    font-family: inherit; /* Inherit font from surrounding text */
+}
+
+#resume-button {
+    display: inline-block; /* Make it an inline block for better alignment */
+    padding: 10px 20px; /* Add padding for a better button feel */
+    background-color: #9cbfe5b1; /* Bootstrap-like blue color */
+    color: rgb(0, 0, 0); /* White text for contrast */
+    text-decoration: none; /* Remove underline */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+    font-family: Playfair Display, serif; /* Ensure it uses the same font */
+    margin: 20px auto; /* Center the button horizontally */
+    text-align: center; /* Center the text inside the button */
+}
+
+ul {
+    list-style-position: inside;
+    text-align: center;
+  }
+
+.code-snippet-container {
+  position: relative;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 1em;
+  border-radius: 4px;
+  width: fit-content; /* Makes width match content size */
+  margin: 1em auto;   /* Centers horizontally */
+  display: block;     /* Ensure block-level element for centering */
+  text-align: left; /* Adjust text alignment if desired */
+}
+
+.code-snippet-container pre {
+  margin: 0;
+  background: transparent;
+}
+
+.copy-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  background-color: transparent; 
+  cursor: pointer;
+  font-size: 1.2rem; /* Smaller size */
+  color: #0078d4; /* Brand color */
+}
+
+/* Use a clipboard emoji or any icon you prefer */
+.copy-button::before {
+  content: '📋';
+}
