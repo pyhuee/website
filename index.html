@@ -4,30 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carlos Torres | Home</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- CSS Font: `Coral Pixels` , `Playfair Display`, -->
+    <link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hello World.</h1>
-    <p>Hello internet, my name is Carlos Torres, and this is my site. <br> I'm not sure if I will use a CMS/Application to run this site or not, but as you can tell, here we are with just basic HTML. </p>
-    <h1>Love letter to Linewize</h1>
-    <p>Dear Linewize, <br> <br> I know my domain is newly registered, but please do not block it. This page will not hold anything wrong. Only thing it might have is other links to other pages, and maybe a few tools I want to develop sooner like a polished in-browser ffmpeg powered media converter  <p>Thank you, <br> Carlos Torres </p>
+    <header>
+        <!-- I need to add header content here, but for now it's going to be blank-->
+    </header>
 
-    <h1><a href="/mr-a/">Go check out my project for Mr A's class!, or click here to go to it!</a></h1>
+    <main>
+        <!-- Gotta add content here, just the general main page content. -->
+         <h1 id="indexIntroHeader">Good </h1>
+        <!-- END MAIN CONTENT -->
+         <script>
+            // Get the h1 element by its ID
+            const headerElement = document.getElementById('indexIntroHeader');
 
-    <h1>PowersShell Script!</h1>
-    <p>So, I cheffed up a little script, mostly thanks to the power of AI, and a bit of common sense, to install/fetch the following programs</p>
-    <ul>
-        <li><a href="https://obsidian.md">Obsidian.md</a> oh, it looks like it's broken! update on the way!</li>
-        <li><a href="https://github.com/yt-dlp/yt-dlp">YT-DLP (youtube downloader)</a>psst. it's downloaded to your downloads folder. </li>
-        <li><a href="https://desktop.github.com">Github Desktop</a></li>
-        <li><a href="https://code.visualstudio.com">Visual Studio Code</a></li>
-    </ul>
+            // Get the current hour (0-23)
+            const currentHour = new Date().getHours();
 
-    <p>and maybe more in the future, but for now, this is what I have. If you wanna add more, feel free to open up a pull request at the <a href="https://github.com/pyhuee/glowing-software">repo</a></p>
-    <p>also, you can create an issue on the repo, or use this <a href="https://forms.gle/76oFEi1svFKEZy5p9">google form</a> to request software.</p>
-    <p>To use this script, execute this lovely one liner, that I painfully handcrafted with my bare hands.</p>
-    <p>Set-ExecutionPolicy Bypass -Scope CurrentUser; Invoke-WebRequest -Uri "https://github.com/pyhuee/glowing-software/raw/main/GetSoftware.ps1" -OutFile "GetSoftware.ps1"; ./GetSoftware.ps1</p>
-    
-    <p>well, that's enough for now. last updated Wed Feb 15, 9:02 AM.</p>
+            // Determine the appropriate greeting
+            let greeting;
+            if (currentHour < 12) {
+                greeting = "Good Morning!";
+            } else if (currentHour < 17) { // 12 PM to 4:59 PM
+                greeting = "Good Afternoon.";
+            } else { // 5 PM onwards
+                greeting = "Good Evening.";
+            }
 
+            // Update the text content of the h1 element
+            headerElement.textContent = greeting;
+         </script>
+    </main>
+
+    <footer>
+        <!-- I need to add footer content here, but for now it's going to be blank-->
+         <p class="copyright_footer">&copy; 2025 Carlos Torres</p>
+    </footer>
 </body>
 </html>
