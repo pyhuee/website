@@ -1,50 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carlos Torres | Home</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- CSS Font: `Coral Pixels` , `Playfair Display`, -->
-    <link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <!-- I need to add header content here, but for now it's going to be blank-->
-    </header>
-
-    <main>
-        <!-- Gotta add content here, just the general main page content. -->
-         <h1 id="indexIntroHeader">Good </h1>
-        <!-- END MAIN CONTENT -->
-         <script>
-            // Get the h1 element by its ID
-            const headerElement = document.getElementById('indexIntroHeader');
-
-            // Get the current hour (0-23)
-            const currentHour = new Date().getHours();
-
-            // Determine the appropriate greeting
-            let greeting;
-            if (currentHour < 12) {
-                greeting = "Good Morning!";
-            } else if (currentHour < 17) { // 12 PM to 4:59 PM
-                greeting = "Good Afternoon.";
-            } else { // 5 PM onwards
-                greeting = "Good Evening.";
-            }
-
-            // Update the text content of the h1 element
-            headerElement.textContent = greeting;
-         </script>
-    </main>
-
-    <footer>
-        <!-- I need to add footer content here, but for now it's going to be blank-->
-         <p class="copyright_footer">&copy; 2025 Carlos Torres</p>
-    </footer>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carlos Torres | Home</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="/styles/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- CSS Font: `Coral Pixels` , `Playfair Display`, -->
+        <link href="https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <!-- Gotta add content here, just the general main page content. -->
+            <h1 id="indexIntroHeader">Good Day!</h1>
+            <p>My name is Carlos Torres, and this is my website. I like to make things, or learn them. I like the idea of Right To Own, or Right To Repair. I also like the design aspect of web development.</p>
+            <p>A completed projcet that I have done is a digital business card for a project. If you'd like to vist it, you can <a href="/mr-a/index.html">look at it here</a></p>
+            
+            <!-- Implement previous Excercise. -->
+            <h1>A calendar </h1>
+            <p>A requirent for one of this tasks was for me to attach a previous assignment. This is a calendar I created for it.Now, just prettyified with more CSS</p>
+            <div id="calendarDiv">
+                <h2 id="aprilCalendar">April 2025</h2>
+                    <table border='2' id="calendarApril2025">
+                        <tr>
+                            <th>Sunday</th>
+                            <th>Monday</th>
+                            <th>Tuesday</th>
+                            <th>Wednesday</th>
+                            <th>Thursday</th>
+                            <th>Friday</th>
+                            <th>Saturday</th>
+                        </tr>
+                        <tr>
+                            <td><!-- Purposely left blank --></td>
+                            <td><!-- Purposely left blank --></td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>3</td>
+                            <td>4</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>7</td>
+                            <td>8</td>
+                            <td>9</td>
+                            <td>10</td>
+                            <td>11</td>
+                            <td>12</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>14</td>
+                            <td>15</td>
+                            <td>16</td>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>19</td>
+                        </tr>
+                        <tr>
+                            <td>20</td>
+                            <td>21</td>
+                            <td>22</td>
+                            <td>23</td>
+                            <td>24</td>
+                            <td>25</td>
+                            <td>26</td>
+                        </tr>
+                        <tr>
+                            <td>27</td>
+                            <td>28</td>
+                            <td>29</td>
+                            <td>30</td>
+                            <td><!-- Purposely left blank --></td>
+                            <td><!-- Purposely left blank --></td>
+                            <td><!-- Purposely left blank --></td>
+                        </tr>
+                    </table>
+            </div>
+            <!-- The Lists -->
+            <!-- unordered list -->
+            <h1>Top Ten Kanye Songs (in no order)</h1>
+            <ul>
+                <li>Bound 2 - Yeezus</li>
+                <li>Stronger - Graduation</li>
+                <li>Gold Digger - Late Registration</li>
+                <li>All of the Lights - My Beautiful Dark Twisted Fantasy</li>
+                <li>Runaway - My Beautiful Dark Twisted Fantasy</li>
+                <li>Power - My Beautiful Dark Twisted Fantasy</li>
+                <li>Jesus Walks - The College Dropout</li> 
+                <li>Through the Wire - The College Dropout</li>
+                <li>Ultralight Beam - The Life of Pablo</li>
+                <li>Good Morning - Graduation</li>
+            </ul>
+            <!-- ordered list -->
+                <h1>Top Five Favorite Movies</h1>
+                <ol>
+                    <li>Fast X</li>
+                    <li>Ready Player One</li>
+                    <li>Central Inteligence</li>
+                    <li>Hobbs & Shaw</li>
+                    <li>Ted 2</li>
+                </ol>
+            <!-- END MAIN CONTENT -->
+            <!-- I need to add footer content here, but for now it's going to be blank-->
+            <p class="copyright_footer">&copy; 2025 Carlos Torres</p>
+    </body>
 </html>
